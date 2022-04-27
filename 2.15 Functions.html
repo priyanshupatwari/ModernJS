@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+  /*A parameter is the variable listed inside the parentheses in the
+   function declaration (it’s a declaration-time-term).
+  An argument is the value that is passed to the function when it is
+   called (it’s a call-time-term).s*/
+  // -------------------------------------------------------------
+  // Rewrite the function using '?' or '||'
+  // importance: 4
+  // The following function returns true if the parameter age is greater than 18.
+  // Otherwise it asks for a confirmation and returns its result.
+  // function checkAge(age) {
+  //   if (age > 18) {
+  //     return true;
+  //   } else {
+  //     return confirm('Did parents allow you?');
+  //   }
+  // }
+
+  // '?':
+  function checkAge(age) {
+    return (age > 18) ? true : confirm('Did parents allow you?');
+  }
+  // ||
+  // function checkAge(age) {
+  //   return (age > 18) || confirm('Did parents allow you?');
+  // }
+
+  // let rightaAge = checkAge(16);
+  // console.log(rightaAge);
+
+  // ---------------------------------------------------------------
+  // Function pow(x,n)
+  // importance: 4
+  // Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+
+  function pow(x, n) {
+    return x ** n;
+  }
+  let x = +prompt("x ?")
+  let n = +prompt("n ?")
+  // console.log(pow(x, n));
+
+  // ---------------------------------------------------------------
+
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+  // Rewrite "if" into "switch"
+  // importance: 4
+  // Rewrite the code below using a single switch statement:
+
+  let a = +prompt('a?', '');
+  // we get our prompt input value as number and not string.
+  // if (a == 0) {
+  //   alert(0);
+  // }
+  // if (a == 1) {
+  //   alert(1);
+  // }
+
+  // if (a == 2 || a == 3) {
+  //   alert('2,3');
+  // }
+
+  switch (a) {
+    case 0:
+      alert(0);
+      break;
+    case 1:
+      alert(1);
+      break;
+    case 2:
+    case 3:
+      alert('2,3');
+      break;
+    default:
+      break;
+  }
+
+</script>
