@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+  // Check for emptiness
+  // importance: 5
+  // Write the function isEmpty(obj) which returns true if the object
+  //  has no properties, false otherwise.
+  // Should work like that:
+  let isEmpty = (obj) => {
+    for (const key in obj) {
+      return true;
+    }
+    return false;
+  }
+
+  let schedule = {};
+
+  console.log((isEmpty(schedule))); // true
+
+  schedule["8:30"] = "get up";
+
+  console.log((isEmpty(schedule))); // false
+
+  // ----------------------------------------------------------------
+  // Sum object properties
+  // importance: 5
+  // We have an object storing salaries of our team:
+
+  let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+  }
+  // Write the code to sum all salaries and store in the variable
+  // sum.Should be 390 in the example above.
+  let sum = 0;
+  for (const key in salaries) {
+    sum = sum + salaries[key]
+  }
+  console.log(sum);
+
+  // ----------------------------------------------------------------
+  // Multiply numeric property values by 2
+  // importance: 3
+  // Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.
+  let multiplyNumeric = (object) => {
+    for (const key in object) {
+      if (typeof object[key] === 'number') {
+        object[key] *= 2;
+      }
+    }
+  }
+  let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+  };
+
+  multiplyNumeric(menu);
+
+  console.log(menu);
+  // ------------------------------------------------
+
+
+</script>
